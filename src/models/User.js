@@ -36,7 +36,8 @@ userSchema.pre('save', function(next) {
     return next();
   }
 
-  bcrypt.genSalt(10, (err, salt) => {
+  const rounds = parseInt(process.env.BCRYPT_ROUNDS) || 10;
+  bcrypt.genSalt(rounds, (err, salt) => {
     if (err) {
       next(err);
     }
