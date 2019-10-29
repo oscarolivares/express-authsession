@@ -2,13 +2,18 @@
   "name": "express-authsession",
   "version": "1.0.0",
   "description": "Authentication and session manager with express",
-  "main": "index.js",
+  "author": "Oscar Olivares <oscarolivares625@gmail.com>",
+  "license": "SEE LICENSE IN <LICENSE>",
   "repository": {
     "type": "git",
     "url": "https://github.com/oscarolivares/express-authsession"
   },
-  "author": "Oscar Olivares <oscarolivares625@gmail.com>",
-  "license": "SEE LICENSE IN <LICENSE>",
+  "engines": {
+    "node": ">= 10.16.3",
+    "npm": ">= 6.9.0",
+    "yarn": ">= 1.19.1"
+  },
+  "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js"
   },
